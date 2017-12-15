@@ -14,15 +14,15 @@
 * 2. if a menu link with sub-nav (showSubnavLink) is open, close it when triggered
 **/
 
-var nav = $('.account-menu')
-var mainNav = $('.account-menu__main')
-var subNav = $('.subnav')
-var showSubnavLink = $('.account-menu__link--more')
-var showNavLinkMobile = $('.account-menu__link--menu')
-var viewportWidth = $(window).width()
-var backLink = $('.account-menu__link--back a')
-
 module.exports = function () {
+  var nav = $('.account-menu')
+  var mainNav = $('.account-menu__main')
+  var subNav = $('.subnav')
+  var showSubnavLink = $('.account-menu__link--more')
+  var showNavLinkMobile = $('.account-menu__link--menu')
+  var viewportWidth = $(window).width()
+  var backLink = $('.account-menu__link--back a')
+
   subNav.attr({
     'aria-hidden': 'true',
     'tabindex': -1
